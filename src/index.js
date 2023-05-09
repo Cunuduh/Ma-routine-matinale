@@ -1,12 +1,12 @@
 const password = "(1, 2)"
 let proompt = ""
 do {
-    proompt = window.prompt("Solve this linear system to find the password: \n 2𝔁 + 3𝔂 = 8 \n 3𝔁 + 2𝔂 = 7 \n Enter the password in the form (𝔁, 𝔂):")
+    proompt = window.prompt("Résolvez ce système linéaire pour trouver le mot de passe: \n 2𝔁 + 3𝔂 = 8 \n 3𝔁 + 2𝔂 = 7 \n Entrez le mot de passe sous la forme de (𝔁, 𝔂):")
 } while (!proompt)
 
 if (proompt.trim() === password) {
-    alert("Let them in. Let's hope they didn't use inspect element like a nerd.")
+    alert("Laissez-les entrer")
 } else {
-    alert("Pay attention in math class instead of playing Valorant.")
+    alert("Écoutez en cours de mathématiques au lieu de jouer à Valorant")
     window.location.href = "https://www.youtube.com/watch?v=mxeo3zaf0Vo"
 }
