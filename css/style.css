@@ -66,6 +66,31 @@ button, a.button {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(100, 100, 100);
 }
+audio {
+    padding: 10px;
+}
+audio::-webkit-media-controls-panel {
+    background: rgb(var(--theme-tertiary));
+    border-radius: 10px;
+}
+audio::-webkit-media-controls-time-remaining-display, 
+audio::-webkit-media-controls-current-time-display {
+    color: rgb(var(--font-color));
+    font-family: "Rubik", sans-serif;
+    text-shadow: none;
+}
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-timeline {
+    filter: invert(0.5);
+}
+audio::-webkit-media-controls-mute-button:hover,
+audio::-webkit-media-controls-play-button:hover,
+audio::-webkit-media-controls-volume-slider:hover,
+audio::-webkit-media-controls-timeline:hover {
+    filter: invert(1);
+}
 .search-bar {
     background-color: rgb(var(--theme-tertiary));
     border: none;
@@ -145,7 +170,7 @@ button:hover, a.button:hover {
     overflow-y: auto;
     overflow-x: hidden;
     text-align: center;
-    width: 20vw;
+    width: 19.5vw;
 }
 #archives > .archives-section > .title {
     color: rgb(var(--theme-primary));
