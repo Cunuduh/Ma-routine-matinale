@@ -141,7 +141,7 @@ button:hover, a.button:hover {
     top: 10vh;
     background-color: rgb(var(--theme-background));
     color: rgb(var(--theme-primary));
-    width: 72.5vw;
+    width: 70vw;
     height: 85vh;
     border-radius: 10px;
     margin: 10px;
