@@ -12,6 +12,7 @@ body {
     background-color: rgb(var(--body-color));
     margin: 0px;
     overflow: hidden;
+    display: grid;
 }
 h1, h2, h3, input, select, button, span, p, article {
     color: rgb(var(--font-color));
@@ -91,6 +92,9 @@ audio::-webkit-media-controls-volume-slider:hover,
 audio::-webkit-media-controls-timeline:hover {
     filter: invert(1);
 }
+.search {
+    margin: 10px;
+}
 .search-bar {
     background-color: rgb(var(--theme-tertiary));
     border: none;
@@ -106,7 +110,6 @@ audio::-webkit-media-controls-timeline:hover {
     width: 100px;
     filter: invert(1);
     background-color: transparent;
-    display: block;
 }
 .header:hover > .logo {
     filter: drop-shadow(0px 5px 5px rgba(255, 255, 255, 0.5));
@@ -119,28 +122,28 @@ button:hover, a.button:hover {
 }
 #top {
     top: 0px;
+    justify-self: center;
     background-color: rgb(var(--theme-background));
     color: rgb(var(--theme-primary));
-    width: 98vw;
-    height: 5vh;
+    width: 99%;
+    height: 7vh;
     border-radius: 10px;
     display: flex;
     position: fixed;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     margin: 10px;
+    margin-top: 0%;
 }
 #main-article {
     position: relative;
     top: 10vh;
     background-color: rgb(var(--theme-background));
     color: rgb(var(--theme-primary));
-    width: 75vw;
+    width: 72.5vw;
     height: 85vh;
     border-radius: 10px;
-    padding: 10px;
     margin: 10px;
     overflow-y: auto;
     display: inline-flex;
@@ -167,17 +170,17 @@ button:hover, a.button:hover {
     padding: 20px;
     flex-direction: column;
     align-items: center;
+    justify-self: right;
     overflow-y: auto;
     overflow-x: hidden;
     text-align: center;
-    width: 19.5vw;
+    max-width: 22.5vw;
 }
 #archives > .archives-section > .title {
     color: rgb(var(--theme-primary));
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 10px;
-    align-items: center;
 }
 #archives > .archives-section > .archive-section > .archive {
     background-color: rgb(var(--theme-tertiary));
