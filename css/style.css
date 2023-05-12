@@ -50,6 +50,8 @@ a.button,button{
     border-radius:5px;
     color:rgb(var(--font-color));
     cursor:pointer;
+    display:inline-flex;
+    flex-wrap:nowrap;
     filter:drop-shadow(0 0px 5px rgba(0, 0, 0, .5));
     font-family:Rubik,sans-serif;
     font-size:1rem;
@@ -117,7 +119,7 @@ audio::-webkit-media-controls-mute-button:hover,audio::-webkit-media-controls-pl
     filter:drop-shadow(0 5px 5px rgba(255, 255, 255, .5));
 }
 #top{
-    top:-1vh;
+    top:-.5vh;
     grid-area:top;
     justify-self:center;
     color:rgb(var(--theme-primary));
